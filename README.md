@@ -48,7 +48,7 @@ public class SampleController {
 
     @GetMapping(value = "/")
     public ResponseEntity<String> echo() {
-       return ResponseEntity.ok(Echo.builder().msg(tokenScopeService.sayHello()).build());
+       return ResponseEntity.ok(tokenScopeService.sayHello());
     }
 }
 ```
